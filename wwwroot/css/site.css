@@ -1,0 +1,120 @@
+﻿body {
+    --bege: #E6E0D6;
+    --marrom-escuro: #816D4F;
+    --marrom-claro: #B29463;
+    font-family: 'Barlow', sans-serif;
+}
+
+input[type=checkbox] {
+    border: 2px solid var(--marrom-claro);
+    box-shadow: none;
+}
+
+    input[type=checkbox]:checked,
+    input[type="checkbox"]:focus {
+        background-color: var(--marrom-claro);
+        border-color: var(--marrom-claro);
+        box-shadow: none;
+        outline: none;
+    }
+
+.banner-1 {
+    background-image: url(../assets/banner-1.png);
+}
+
+.banners {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banners-titulo {
+    --bs-bg-opacity: .2;
+}
+
+.banner-2 {
+    background-image: url(../assets/banner-2.png);
+}
+
+.banner-3 {
+    background-image: url(../assets/banner-3.png);
+}
+
+.banners {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banners-titulo {
+    --bs-bg-opacity: .2;
+}
+
+.botao-padrao {
+    background-color: var(--marrom-claro);
+    color: black;
+}
+
+    .botao-padrao:hover {
+        background-color: var(--marrom-escuro);
+    }
+
+.input-range::-webkit-slider-thumb, footer {
+    background-color: var(--marrom-claro);
+}
+
+[data-bs-theme="dark"] {
+    color: white;
+}
+
+.nav-link, .card-body, .offcanvas, .accordion, .btn, .card-body, .accordion-body {
+    --bs-nav-link-color: black;
+    --bs-card-color: black;
+    --bs-offcanvas-color: black;
+    --bs-body-color: black;
+    --bs-body-color: black;
+}
+
+[data-bs-theme="dark"] .nav-link,
+[data-bs-theme="dark"] .card-body,
+[data-bs-theme="dark"] .offcanvas,
+[data-bs-theme="dark"] .accordion,
+[data-bs-theme="dark"] .btn,
+[data-bs-theme="dark"] .card-body,
+[data-bs-theme="dark"] .accordion-body {
+    color: white;
+}
+
+
+
+/* Estilizando o efeito para os links */
+.nav-item a {
+    position: relative;
+    color: #000; /* Cor do texto normal */
+    text-decoration: none;
+}
+
+    /* Estilizando o efeito quando passar o mouse */
+    .nav-item a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0; /* Posição inicial na esquerda */
+        width: 0; /* Começa com largura zero */
+        height: 2px;
+        background-color: var(--marrom-claro); /* Cor do efeito de risco */
+        transition: width 0.3s ease-in-out; /* Tempo e efeito de transição */
+    }
+
+    .nav-item a:hover::after {
+        width: 100%; /* Expandindo o efeito quando o mouse passa sobre o link */
+    }
+
+
+
